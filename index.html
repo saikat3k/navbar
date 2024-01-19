@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .navbar{
+            background-color: tomato;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .navbar-link{
+            text-decoration: none;
+            color: #FFF;
+            padding: 20px;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar-link:hover{
+            background-color: #000;
+        }
+        .dropdown-one{
+            display: inline;
+            position: relative;
+        }
+        .dropdown-one-item{
+            position: absolute;
+            background-color: tomato;
+            width: 133px;
+            top: 38px;
+            left: 0px;
+            display: none;
+        }
+        .dropdown-one:hover .dropdown-one-item{
+            display: block;
+        }
+        .dropdown-one-item a{
+            display: block;
+            text-align: left;
+        }
+        .dropdown-two{
+            display: inline;
+            position: relative;
+        }
+        .dropdown-two-item{
+            position: absolute;
+            background-color: tomato;
+            width: 150px;
+            left: 67px;
+            top: 0px;
+            display: none;
+        }
+        .dropdown-two:hover .dropdown-two-item{
+            display: block;
+        }
+        .dropdown-two-item a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-link">Home</a>
+        <div class="dropdown-one">
+            <a href="#" class="navbar-link">WordPress</a>
+            <div class="dropdown-one-item">
+                <a href="#" class="navbar-link">Theme</a>
+                <a href="#" class="navbar-link">Plugins</a>
+                <div class="dropdown-two">
+                    <a href="#" class="navbar-link">Tutorials</a>
+                    <div class="dropdown-two-item">
+                        <a href="#" class="navbar-link">Stuff</a>
+                        <a href="#" class="navbar-link">Things</a>
+                        <a href="#" class="navbar-link">Other Stuff</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="navbar-link">Graphic Design</a>
+        <a href="#" class="navbar-link">Inspiration</a>
+        <a href="#" class="navbar-link">Contact</a>
+        <a href="#" class="navbar-link">About</a>
+    </div>
+</body>
+</html>
